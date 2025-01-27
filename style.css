@@ -1,0 +1,207 @@
+
+@import url('https://fonts.googleapis.com/css2?family=New+Amsterdam&display=swap');
+
+@keyframes entrada {
+    0% {
+      transform: translateX(-200px);
+      opacity: 0;  
+    }
+
+    100% {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+@keyframes entrada2 {
+    0% {
+      transform: translateX(200px);
+      opacity: 0;  
+    }
+
+    100% {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+@keyframes entrada-header {
+    0% {
+      transform: translateY(-200px);
+      opacity: 0;  
+    }
+
+    100% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'New Amsterdam';
+}
+
+body {
+    overflow-x: hidden;
+    overflow-y: hidden;
+/*     background-color: #1b1b1b; */
+    background-color: black;
+    color: white;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.background {
+    z-index: -1;
+    position: absolute;
+    width: 1600px;
+    height: 680px;
+}
+
+header {
+    margin-top: 20px;
+    width: 80vw;
+    height: 7vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #282828;
+    padding: 10px;
+    animation: entrada-header 0.5s;
+}
+
+#menu {
+    width: 5%;
+    display: none;
+
+}
+
+#menu:hover {
+    opacity: 0.7;
+}
+
+
+.logo {
+    padding: 20px;
+    width: 150px;
+}
+
+.links {
+    width: 150%;
+    margin: 30%;
+}
+
+.lista {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+    margin: 10%;
+}
+
+.link {
+    width: 6vw;
+    font-size: 150%;
+
+    text-decoration: none;
+    color: white;
+
+}
+
+.nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.linha {
+    height: 20px;
+    width: 2px;
+    background-color: gray;
+
+}
+
+.login {
+    position: absolute;
+    right: 12%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    text-decoration: underline;
+    cursor: pointer;
+    color: white;
+}
+
+.login-link {
+    color: white;
+    font-size: 25px;
+    padding: 5px;
+}
+
+.icon-usuario {
+    width: 25px;
+
+}
+
+main {
+    height: 80vh;
+    width: 100vw;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+}
+
+.personagem {
+    width: 35%;
+    margin-left: 150px;
+    margin-top: 50px;
+    animation: entrada 1s;
+}
+
+.descricao {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-right: 150px;
+    animation: entrada2 1s;
+}
+
+p {
+    letter-spacing: 2px;
+    margin-bottom: 20px;   
+    font-size: 15px;
+}   
+
+
+.cod-bo6-logo {
+    width: 75%;
+    margin-bottom: 20px;
+
+}
+
+.reservar {
+    height: 40px;
+    width: 150px;
+    font-size: 18px;
+    background-color: #f96800;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.reservar:hover {
+    background-color: #ff7716;
+}
+
+
+
